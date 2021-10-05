@@ -11,3 +11,4 @@
 .byebug_history
 *~
 Gemfile.lock
+/lib/futurism_nice_partials/#helper.rb#
