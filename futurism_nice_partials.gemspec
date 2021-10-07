@@ -22,4 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "actionview", ">= 4.2.6"
   spec.add_dependency "futurism", "1.2.0.pre3"
   spec.add_dependency "nice_partials"
+
+  spec.add_development_dependency "standard"
 end
