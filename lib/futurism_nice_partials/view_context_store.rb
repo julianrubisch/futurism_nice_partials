@@ -11,7 +11,15 @@ module FuturismNicePartials
     end
 
     def []=(key, value)
-      @blocks[key] = value
+      mutex.synchronize do
+        @blocks[key] = value
+      end
+    end
+
+    private
+
+    def mutex
+      @mutex ||= Mutex.new
     end
   end
 
